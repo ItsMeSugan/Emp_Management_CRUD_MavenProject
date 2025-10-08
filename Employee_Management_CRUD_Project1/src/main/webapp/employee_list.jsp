@@ -8,17 +8,43 @@
 <head>
 <meta charset="UTF-8">
 <title>Employee List</title>
-<!-- <style>
-table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-th { background-color: #f2f2f2; }
-button { padding: 5px 10px; margin: 5px; }
-</style> -->
+<style>
+.table-style {
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+.table-style th, .table-style td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px 0;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+button {
+	padding: 5px 10px;
+	margin: 5px;
+}
+</style>
 </head>
 <body>
 
 	<h1>Employee List</h1>
-	
+
 
 	<sql:setDataSource var="employeeDB" driver="com.mysql.cj.jdbc.Driver"
 		url="jdbc:mysql://localhost:3306/employee_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC"
@@ -32,7 +58,7 @@ button { padding: 5px 10px; margin: 5px; }
 		<p>No employees found.</p>
 	</c:if>
 	<c:if test="${result.rowCount > 0}">
-		<table border="1" cellpadding="5">
+		<table border="1" class="table-style">
 			<tr>
 				<th>ID</th>
 				<th>First Name</th>
@@ -54,7 +80,7 @@ button { padding: 5px 10px; margin: 5px; }
 		</table>
 	</c:if>
 	<div style="margin: 10px 0;">
-		<a href="index.jsp"><button> Go Back </button></a>
+		<a href="index.jsp"><button>Go Back</button></a>
 	</div>
 
 </body>

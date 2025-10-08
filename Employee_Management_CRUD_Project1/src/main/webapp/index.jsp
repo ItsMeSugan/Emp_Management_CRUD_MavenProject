@@ -9,7 +9,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Employee Management System</title>
-<!-- <style>
+<style>
 table { border-collapse: collapse; width: 100%; margin: 10px 0; }
 th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
 th { background-color: #f2f2f2; }
@@ -19,7 +19,7 @@ th { background-color: #f2f2f2; }
 button { padding: 5px 10px; margin: 5px; }
 input, select { padding: 5px; margin: 2px; }
 .checkbox-item { margin: 5px 0; }
-</style> -->
+</style> 
 </head>
 <body>
 
